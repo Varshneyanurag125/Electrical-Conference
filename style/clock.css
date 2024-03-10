@@ -1,0 +1,207 @@
+.countdown-container {
+    display: flex;
+    width: 40%;
+    max-width: 50%;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    /* background-color: #fe4a17; */
+  }
+  
+  .days-container,
+  .hours-container,
+  .minutes-container, 
+  .seconds-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.39);
+    border: 5px solid rgba(255,255,255,0.3);
+    width: 100px;
+    height: 100px;
+    border-radius: 99px;
+  }
+  
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 2rem; 
+    margin: 10px 0;
+    color: #fe4a17;    font-family: "Allerta Stencil";
+  }
+  
+  .days-label,
+  .hours-label,
+  .minutes-label,
+  .seconds-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  /* //////////////////////media queries//////////////////////// */
+  
+  @media screen and (max-width: 300px) {
+
+    .countdown-container {
+      width: 80%;
+      max-width: 85%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    } 
+  
+    .days-container,
+    .hours-container,
+    .minutes-container,
+    .seconds-container {
+      width: 85px;
+      height: 85px;
+    }
+  
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+      font-size: 1.8rem;
+    }
+  
+    .days-label,
+    .hours-label,
+    .minutes-label,
+    .seconds-label {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .countdown-container {
+      width: 55%;
+      max-width: 90%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    } 
+  
+    .days-container,
+    .hours-container,
+    .minutes-container,
+    .seconds-container {
+      width: 85px;
+      height: 85px;
+    }
+  
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+      font-size: 1.8rem;
+    }
+  
+    .days-label,
+    .hours-label,
+    .minutes-label,
+    .seconds-label {
+      font-size: 0.9rem;
+    }
+  }
+ 
+  @media screen and (min-width: 1024px) {
+    .countdown-container {
+      width:60%;
+      max-width: 85%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    } 
+
+    .days-container,
+    .hours-container,
+    .minutes-container,
+    .seconds-container {
+      width: 100px;
+      height: 100px;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+      font-size: 1.8rem;
+    }
+
+    .days-label,
+    .hours-label,
+    .minutes-label,
+    .seconds-label {
+      font-size: 0.9rem;
+    }
+    
+  }
+  
+  @media screen and (min-width:2560px) {
+    .countdown-container {
+      width:32%;
+      max-width: 85%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    } 
+
+    .days-container,
+    .hours-container,
+    .minutes-container,
+    .seconds-container {
+      width: 120px;
+      height: 120px;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+      font-size: 1.8rem;
+    }
+
+    .days-label,
+    .hours-label,
+    .minutes-label,
+    .seconds-label {
+      font-size: 0.9rem;
+    }
+    
+  }
+
+  @media screen and (min-width:1440px) {
+    .countdown-container {
+      width:45%;
+      max-width: 85%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    } 
+
+    .days-container,
+    .hours-container,
+    .minutes-container,
+    .seconds-container {
+      width: 100px;
+      height: 100px;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+      font-size: 1.8rem;
+    }
+
+    .days-label,
+    .hours-label,
+    .minutes-label,
+    .seconds-label {
+      font-size: 0.9rem;
+    }
+    
+  }
+
+  

@@ -1,0 +1,274 @@
+/* Body styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: #efefef;
+  overflow-x: hidden;
+}
+
+
+.body__apparent{
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(white 0%,#91dac73b 45%);
+    /* background-color: #91dac734; */
+}
+
+.paper1__box{
+    margin: 0rem 5rem 3rem 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:1rem 1rem ; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: white;
+    
+}
+
+.paper1__box .paper__heading h1{
+    color: #101130;
+    position: relative;
+    width:fit-content;
+    font-family: "Allerta Stencil";
+}
+
+.paper1__box .paper__heading h1::after{
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom:2px;
+    height: 1px;
+    width:110%;
+    background-color: #1011309f;
+}
+
+ .paper__list h2{
+    cursor: pointer;
+    color: #fe4a17;
+    padding: .5rem;
+    font-weight: 600;
+    /* font-size: 18px; */
+    
+}
+/* .paper1__box .paper__list ul{
+    list-style: none;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    cursor: pointer;
+} */
+
+.sponsor-wrapper{
+    display: flex;
+    /* flex: auto; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.sponsor-wrapper .sponsor-content{
+    color: #fe4a17;
+    padding: 1.5rem 2rem;
+    text-wrap: wrap;
+    width: fit-content;
+    font-weight: 600;
+    font-size:18px;
+}
+
+
+
+/* ////////////////////////////////registration style ///////////// */
+
+.reg__head h2{
+    cursor: pointer;
+    color: #fe4a17;
+    padding: .5rem;
+    font-weight: 600;
+    font-size:18px;
+    padding: 1rem 1.5rem;
+}
+.note-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .2rem;
+}
+.note-head{
+    color: rgb(60, 60, 60);
+    cursor: pointer;
+    padding: .5rem;
+    font-weight: 500;
+}
+
+.table__table-dark {
+    margin: 1rem;
+    border-collapse: collapse;
+    border: 2px solid  white;
+    cursor: pointer;
+}
+
+.table-container{
+  margin-top: 1rem;
+}
+
+.table__table-dark th,
+.table__table-dark td {
+  border: 1px solid white;
+  padding: 1rem 4rem;
+}
+
+.table__table-dark th {
+  background-color: #101130;
+  color: white;
+  font-weight: bold;
+}
+
+.table__table-dark td {
+  background-color: #f2f2f2;
+}
+
+.table__table-dark th:first-child,
+.table__table-dark td:first-child {
+  border-left: 2px solid white;
+}
+
+.table__table-dark th {
+  border-top: 2px solid white;
+}
+
+.table__table-dark th:last-child,
+.table__table-dark td:last-child {
+  border-right: 2px solid white;
+}
+
+.table__head {
+  background-color: white;
+}
+
+.paper__info {
+  margin-top: 30px;
+  text-align: center;
+  color: #383838;
+  font-size: 18px;
+}
+
+.registration__fee:hover {
+  opacity: 0.8; 
+  transition: opacity 0.3s ease; 
+}
+
+.table__table-dark tr:hover {
+  background-color: #ddd; 
+  transition: background-color 0.3s ease; 
+}
+
+@media screen and (max-width: 768px) {
+  .body__apparent{
+    margin-top: 5rem;
+    padding: 1.5rem;
+  }
+  .paper1__box {
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem auto 1rem auto;
+
+  }
+
+  .paper__heading h1 {
+    font-size: 24px;
+  }
+
+  .paper__list h2 {
+    font-size: 16px;
+  }
+
+  .sponsor-wrapper .sponsor-content {
+    font-size: 14px;
+  }
+
+  .reg__head h2 {
+    font-size: 20px;
+  }
+
+  .note-head {
+    font-size: 14px;
+  }
+
+  .table__table-dark th,
+  .table__table-dark td {
+    padding: 0.5rem 1rem;
+  }
+
+  .table__table-dark th {
+    font-size: 14px;
+  }
+
+  .table__table-dark td {
+    font-size: 12px;
+  }
+
+  .paper__info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .body__apparent{
+    margin-top: 8rem;
+    padding: 1.5rem;
+  }
+  .paper1__box {
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem auto 1rem auto;
+
+  }
+
+  .paper__heading h1 {
+    font-size: 20px;
+  }
+
+  .paper__list h2 {
+    font-size: 14px;
+  }
+
+  .sponsor-wrapper .sponsor-content {
+    font-size: 12px;
+  }
+
+  .reg__head h2 {
+    font-size: 18px;
+  }
+
+  .note-head {
+    font-size: 12px;
+  }
+
+  .table__table-dark th,
+  .table__table-dark td {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .table__table-dark th {
+    font-size: 12px;
+  }
+
+  .table__table-dark td {
+    font-size: 10px;
+  }
+
+  .paper__info {
+    font-size: 12px;
+  }
+}

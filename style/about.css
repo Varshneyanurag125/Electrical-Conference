@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+
+.section-container-wrapper{
+background-color: #f0efef;
+padding:  1.5rem 1.5rem 0 1.5rem;
+}
+.about-hero{
+    background-color: #f8f8f8;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(135, 134, 134, 0.212);
+}
+
+.abouthead-wrapper h1{
+    color: #ff6347;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 35px;
+    font-family: "allerta stencil";
+    font-weight: 600;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem  ;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.hero-content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+}
+.hero-content h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 1px solid black;
+}
+
+.hero-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom:40px ;
+    color: #666;
+}
+
+.hero-img{
+    flex: 1;
+    width: 530px;
+    height: 340px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(135, 134, 134, 0.212);
+}
+
+.hero-img:hover img{
+    transform: scale(1.09);
+}
+
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    border-radius:  10px;
+    object-position: center;
+    transition: 0.3s ease-in-out;
+}
+
+
+.objective-head{
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+
+}
+.objective-wrapper .objective-content{
+    font-size: 18px;
+    line-height: 1.5;
+    margin:20px 1rem ;
+    color: #666;
+}
+
+@media screen and (max-width: 768px){
+    .abouthead-wrapper h1{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .about-hero{
+        margin: 0px;
+    }
+    .about-container{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .hero-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .hero-content h2{
+        font-size: 30px;
+    }
+    .hero-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-img{
+        width: 100%;
+    }
+}

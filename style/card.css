@@ -1,0 +1,57 @@
+:root{
+    --card-color: hsl(238, 50%, 13%);
+}
+.body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.profile-card-wrapper{
+    width: 300px;
+    border: 10px soild black;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    border-bottom: 40px solid var(--card-color);
+    box-shadow: 0px 0px 5px rgba(26, 25, 25, 0.511);
+}
+.profile-card-wrapper:hover{
+    transform: scale(1.04);
+    box-shadow: 2px 2px 8px rgba(26, 25, 25, 0.511);
+    transition: 300ms ease;
+}
+.profile-photo-container{
+    overflow: hidden;
+}
+.profile-background{
+    width: 400px;
+    height: 400px;
+    background-color: var(--card-color);
+    border-radius: 50%;
+    position: relative;
+    top: -250px;
+    left: -18%;
+}
+.profile-photo{
+    width: 120px;
+    border-radius: 50%;
+    position: relative;
+    left: 28%;
+    bottom: 106%;
+}
+.profile-description{
+    position: relative;
+    text-align: center;
+    bottom: 102%;
+    line-height: 2rem;
+}
+.profile-name{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(55, 54, 54);
+}
+.profile-position{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(55, 54, 54, 0.868);
+}

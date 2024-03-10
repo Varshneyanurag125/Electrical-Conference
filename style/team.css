@@ -1,0 +1,61 @@
+body {
+  overflow-x: hidden;
+}
+.hero-committee-wrapper {
+  width: 100vw;
+  background: linear-gradient(white 0%, #91dac73b 45%);
+  margin-top:8rem ;
+}
+.hero-committee-heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-committee-heading h1 {
+  width: fit-content;
+  position: relative;
+  font-family: "Allerta Stencil";
+}
+.hero-committee-heading h1::after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 1.5px;
+  background-color: black;
+  left: -18px;
+  bottom: -12px;
+}
+.committee-card-section {
+  padding-top: 35px;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.committee-card-heading {
+  color: rgb(129, 122, 122);
+  padding-bottom: 15px;
+}
+.committee-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.committee-card-section {
+  padding-bottom: 30px;
+  position: relative;
+}
+.committee-card-section::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1.5px;
+  background-color: gray;
+  left: 25%;
+  bottom: -10px;
+  z-index: -2;
+}

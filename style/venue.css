@@ -1,0 +1,84 @@
+.map-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(240, 239, 239);
+    height: max-content;
+    padding-bottom: 10px;
+  }
+  .main-venue {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .venue-heading{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #263d4d;
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .map-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(135, 134, 134, 0.212);
+  }
+  .sub-heading {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 20px 0;
+  }
+  .venue-icon {
+    height: 30px;
+    margin-left: 20px;
+  }
+  .sub-venue {
+    font-family: "Poppins", sans-serif;
+    margin-left: 18px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .map-canvas {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .venue-box
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .venue-wrapper {
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:1rem 1rem ; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    background-color: white;
+  }
+  .venue-wrapper .venue-content{
+    font-size: 18px;
+    line-height: 1.5;
+    margin:.5rem 1rem ;
+    color:#fe4a17;
+    font-weight: 500;
+}
+
+.participate-content{
+  color: rgba(0, 0, 0, 0.612);
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 1.5rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-wrap: wrap;
+}
+
+  iframe {
+    border-radius: 10px;
+  }
