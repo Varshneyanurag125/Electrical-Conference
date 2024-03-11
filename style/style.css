@@ -320,6 +320,10 @@ a {
   margin-bottom: 1rem;
 }
 
+.last{
+  color: #fe4a17;
+}
+
 a#scroll-btn{
   position: absolute;
   width: 1.7em;
@@ -359,12 +363,10 @@ a#scroll-btn::before{
 }
 
 
-
 /*=============== BREAKPOINTS ===============*/
 
 /* For small devices */
 @media screen and (max-width: 300px) {
-
   .nav__menu{
     display: none;
   }
@@ -386,6 +388,16 @@ a#scroll-btn::before{
 }
 @media screen and (max-width: 768px) {
   
+  .content .heading-wrapper h1{
+    font-size: 32px;
+    padding: 0 1rem;
+
+  }
+  .content .heading-wrapper h2{
+    font-size: 24px;
+    padding: 0 1rem;
+
+  }
   .nav__menu{
     display: none;
   }

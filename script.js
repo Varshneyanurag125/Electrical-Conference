@@ -1,4 +1,6 @@
 // import Slick from './slick-1.8.1/slick/slick.js';
+// let myData = JSON.parse(data);
+// console.log(myData);
 const links = document.querySelectorAll(".page");
 
 for (const link of links) {
