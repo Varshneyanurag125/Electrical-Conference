@@ -27,7 +27,6 @@
 }
 @media screen and (min-width: 1024px) {
     :root {
-      --normal-font-size: 1rem;
       --small-font-size: .875rem;
       --smaller-font-size: .813rem;
     }
@@ -181,9 +180,6 @@ a {
   transition: all 0.5s;
 
 }
-
-/* Show menu */
-
 
 /* Show icon */
 .show-icon .nav__toggle-menu {

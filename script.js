@@ -22,12 +22,21 @@ function clickHandler(e) {
 /*=============== SHOW MENU ===============*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
-          nav = document.getElementById(navId)
+          nav = document.getElementById(navId),
+          link = document.querySelectorAll('.nav__link');
     
     toggle.addEventListener('click', () =>{
-        nav.classList.toggle('show-menu')
-        toggle.classList.toggle('show-icon')
-    })
+        nav.classList.toggle('show-menu');
+        toggle.classList.toggle('show-icon');
+    });
+
+    link.forEach((link) => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('show-menu');
+            toggle.classList.remove('show-icon');
+        });
+    });
+   
  }
  
  showMenu('nav-toggle','nav-menu')
