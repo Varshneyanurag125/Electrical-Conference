@@ -86,6 +86,9 @@
     border-radius: 50%;
     position: relative;
     top: 35px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
   }
   .address-card {
     background-image: url("/images/background.jpg");

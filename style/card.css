@@ -33,11 +33,14 @@
     left: -18%;
 }
 .profile-photo{
-    width: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     position: relative;
-    left: 28%;
+    left: 27%;
     bottom: 106%;
+    object-fit: fill;
+    object-position: center;
 }
 .profile-description{
     position: relative;
