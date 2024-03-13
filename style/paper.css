@@ -181,12 +181,14 @@ body{
   .paper1__box {
     width: 100%;
     padding: 1rem;
-    margin: .5rem auto 1rem auto;
+    margin: 2rem auto 1rem auto;
 
   }
 
   .paper__heading h1 {
     font-size: 24px;
+    text-align: center;
+    padding-bottom: .5rem;
   }
 
   .paper__list h2 {
@@ -194,11 +196,11 @@ body{
   }
 
   .sponsor-wrapper .sponsor-content {
-    font-size: 14px;
+    font-size:16px;
   }
 
   .reg__head h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .note-head {
@@ -244,11 +246,11 @@ body{
   }
 
   .sponsor-wrapper .sponsor-content {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .reg__head h2 {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .note-head {
