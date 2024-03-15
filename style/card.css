@@ -8,11 +8,11 @@
 }
 .profile-card-wrapper{
     width: 300px;
-    border: 10px soild black;
+    background-color: white;
     height: 350px;
     overflow: hidden;
     border-radius: 15px;
-    border-bottom: 40px solid var(--card-color);
+    border-bottom: 35px solid var(--card-color);
     box-shadow: 0px 0px 5px rgba(26, 25, 25, 0.511);
 }
 .profile-card-wrapper:hover{
@@ -33,14 +33,15 @@
     left: -18%;
 }
 .profile-photo{
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     position: relative;
-    left: 27%;
+    left: 23%;
     bottom: 106%;
     object-fit: fill;
     object-position: center;
+    border: 2px solid var(--card-color);
 }
 .profile-description{
     position: relative;
