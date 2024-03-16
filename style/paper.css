@@ -172,13 +172,15 @@ body{
   background-color: #ddd; 
   transition: background-color all; 
 }
+
 .note-head{
-  animation: effect 0.8s linear infinite;
+  animation: effect 0.3s infinite alternate;
   position: relative;
 }
+
 @keyframes effect {
   0% {
-      color: #101130;
+      color: #3037ff;
   }
 
   100% {
@@ -186,7 +188,6 @@ body{
   }
 }
 
-/* CSS */
 .button-87 {
   margin: 10px;
   padding: 15px 30px;
@@ -209,7 +210,6 @@ body{
 
 .button-87:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
