@@ -47,6 +47,8 @@ padding:  1.5rem 1.5rem 0 1.5rem;
     line-height: 1.5;
     margin-bottom:40px ;
     color: #666;
+       text-align: justify;
+    text-justify:auto;
 }
 
 .hero-img{
