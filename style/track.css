@@ -72,11 +72,6 @@
 
 }
 
-
-.first__main:nth-child(odd) {
-    margin-right: 140px;
-}
-
 .first__main {
     width: 500px;
     height: auto;
