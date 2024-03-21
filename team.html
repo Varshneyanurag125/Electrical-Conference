@@ -49,7 +49,7 @@
                         <a href="/index.html#about" class="nav__link">About</a>
                     </li>
                     <li class="dropdown__item">
-                        <a href="/team.html" class="nav__link">Organizing Committee</a>
+                        <a href="/team.html" class="nav__link">Organizing Committee</a> 
                     </li>
                     <li class="dropdown__item">
                         <a href="/index.html#impt-dates" class="nav__link">Imp. Dates</a>
@@ -68,10 +68,34 @@
                     </li>
                 </ul>
             </div>
+            <div class="commitee-navbar-container">
+              <div class="dropdown-container">
+                <button class="dropdown-button main-button commitee-nav-wrapper">
+                  <span class="dropdown-title text-truncate">Organising Committee</span>
+                  <span class="dropdown-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="dropdown-list-container">
+                  <div class="dropdown-list-wrapper">
+                    <ul class="dropdown-list"></ul>
+                    <div class="floating-icon" aria-hidden="true"></div>
+                  </div>
+                </div>
+              </div>
+        
+              <button class="commitee-nav-wrapper" data-aos="fade-right" >External Advisory Committee</button>
+              <button class="commitee-nav-wrapper" data-aos="fade-right" >Internal Advisory Committee</button>
+              <button class="commitee-nav-wrapper" data-aos="fade-right" >Technical Committee</button>
+            </div>
+           
         </nav>
     </header>
 
     <!-- /teamcard -->
+
     <div class="hero-committee-wrapper">
       <div class="hero-committee-heading">
         <h1>ORGANIZING COMMITTEE</h1>
@@ -114,7 +138,7 @@
       </div>
 
       <!-- general chairs -->
-      <div class="committee-card-section">
+      <div class="committee-card-section" id = "general">
         <div class="committee-card-heading">
           <h2>GENERAL-CHAIR</h2>
         </div>
@@ -718,7 +742,8 @@
             </div>
         </div>
     </footer>
-    <script src="loader.js"></script>
+    <!-- <script src="loader.js"></script> -->
+    <script src="team.js  "></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

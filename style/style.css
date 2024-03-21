@@ -82,6 +82,7 @@ a {
 /*=============== NAV ===============*/
 .nav {
   height: var(--header-height);
+  position: relative;
 }
 .nav__data {
   height: 100%;
