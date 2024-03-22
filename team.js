@@ -19,7 +19,7 @@ const icons = {
 };
 
 const listItems = ["Chairman", "Organising Secretaries", "Joint Organising Secretaries","Finance Secretaries","Publicity Chair","Publicity Co-Chairs","Technical Programe Chairs","Publication Chairs","Registration Chairs","Internet & Web Chairs","Sponsorship Chair","Exhibiton & Demonstration Chairs","International Liason & Visa Chairs"];
-const listItemsID = ["general", "General Chair", "Chairman", "Organising Secretaries", "Joint Organising Secretaries","Finance Secretaries","Publicity Chair","Publicity Co-Chairs","Technical Programe Chairs"];
+const listItemsID = ["Chairman", "Organising", "Joint","Finance","Publicity","PublicityCo","TechnicalProgram","Publication","Registration","Internet","Sponsorship","Exhibiton","International"];
 
 const iconTemplate = (path) => {
   return `
