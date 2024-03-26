@@ -136,6 +136,7 @@ body{
 
 .table__table-dark td {
   background-color: #f2f2f2;
+  font-size: 18px;
 }
 
 .table__table-dark th:first-child,
