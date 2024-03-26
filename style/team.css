@@ -82,7 +82,6 @@ svg {
 }
 
 .dropdown-container {
-  position: ;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -209,6 +208,58 @@ li.dropdown-list-item {
 
 .floating-icon svg {
   fill: var(--dropdown-dropdown-text-active);
+}
+
+@media (max-width:320px) {
+  .main-button {
+    width: fit-content;
+    justify-content: center;
+  }
+  .dropdown-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .commitee-navbar-container {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 0;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+
+  }
+
+  .dropdown-list-container {
+    position: relative;
+  }
+
+  .dropdown-list-wrapper {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--dropdown-border-color);
+    border-radius: 0;
+    margin-top: 0.25rem;
+  }
+
+  ul.dropdown-list {
+    font-size: 1.1rem;
+    position: relative;
+  }
+
+  li.dropdown-list-item {
+    padding: 0.5rem;
+    opacity: 1;
+  }
+
+  .floating-icon {
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+  }
 }
 
 /* 

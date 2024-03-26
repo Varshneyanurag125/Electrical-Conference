@@ -93,3 +93,25 @@ dropdownList.addEventListener("mousemove", (e) => {
   root.style.setProperty("--dropdown-dropdown-floating-icon-left", x - iconSize / 2 + "px");
   root.style.setProperty("--dropdown-floating-icon-top", y - iconSize / 2 + "px");
 });
+
+
+const showMenu = (toggleId, navId) =>{
+  const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId),
+        link = document.querySelectorAll('.nav__link');
+  
+  toggle.addEventListener('click', () =>{
+      nav.classList.toggle('show-menu');
+      toggle.classList.toggle('show-icon');
+  });
+
+  link.forEach((link) => {
+      link.addEventListener('click', () => {
+          nav.classList.remove('show-menu');
+          toggle.classList.remove('show-icon');
+      });
+  });
+ 
+}
+
+showMenu('main-button','nav-menu')
