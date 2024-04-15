@@ -40,13 +40,38 @@ const showMenu = (toggleId, navId) =>{
  }
  
  showMenu('nav-toggle','nav-menu')
+ 
+ /* =============== show pdf btn ===============*/
+
+const toggleButton = document.getElementById("pdf-btn");
+const iframe = document.getElementById("pdf");
+
+// Add event listener to the button
+toggleButton.addEventListener("click", function(event) {
+    // Toggle the display property of the iframe
+    event.stopPropagation();
+    if (iframe.style.display === "none") {
+        iframe.style.display = "flex";
+        toggleButton.textContent = "Close";
+    } else {
+        iframe.style.display = "none";
+        toggleButton.textContent = "Click Here";
+    }
+});
+
+document.body.addEventListener("click", function() {
+    if (iframe.style.display === "flex") {
+        iframe.style.display = "none";
+        toggleButton.textContent = "Click Here";
+    }
+});
 
 /*=============== Header -scroll bg change===============*/
 
 function changeBg() {
     let navbar = document.getElementById('nav');
     let scrollValue = window.scrollY;
-    if (scrollValue < 150) {
+    if (scrollValue < 100) {
         navbar.classList.remove('bgcolor');
     } else {
         navbar.classList.add('bgcolor');

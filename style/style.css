@@ -68,11 +68,15 @@ a {
   width: 100%;
   height: fit-content;
   background-color:transparent ;
-  z-index: 1000;
+  z-index: 1000;  
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+
 }
 
 .bgcolor{
   background-color: #111232;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.49);
   transition: all 0.3s;
 }
 .scrollbg{
@@ -192,6 +196,19 @@ a {
   opacity: 1;
   transform: rotate(90deg);
 }
+  /* pdf */
+ .pdf{
+  display: none;
+  height: 100vh;
+  width: 60vw;
+  margin: 1rem auto;
+  border: none;
+  border-radius: 10px;
+  transition:0.3s ease;
+ }
+ 
+
+
 
 /*=============== DROPDOWN ===============*/
 .dropdown__button {
