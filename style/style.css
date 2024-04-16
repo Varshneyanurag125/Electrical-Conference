@@ -154,12 +154,13 @@ a {
 
 .nav__link {
   color: white;
-  font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: background-color 0.3s;
+  text-align: center;
 
 }
 
@@ -468,7 +469,7 @@ a#scroll-btn::before{
   }
   .nav__list {
     display: flex;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
     height: 100%;
   }
   .nav li {

@@ -1,0 +1,40 @@
+.submission-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.submission-head h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: #101130 !important;
+    font-family: "Allerta Stencil", sans-serif;
+}
+.submission-head h1::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    margin: 10px 0;
+}
+
+.submission-content-wrapper ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:first baseline;
+    flex-wrap: wrap;
+    list-style: disc;
+    gap: 1.5rem;
+    padding: 1rem 5rem;
+    text-align: justify;
+}
+
+.submission-content-wrapper .sub-content{
+    color: #333;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
