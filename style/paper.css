@@ -20,7 +20,6 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     background: linear-gradient(white 0%,#91dac73b 45%);
-    /* background-color: #91dac734; */
 }
 
 .paper1__box{
@@ -59,18 +58,52 @@ body{
     color: #fe4a17;
     padding: .5rem;
     font-weight: 600;
-    /* font-size: 18px; */
     
+  }
+  
+  /* ///////////////////////////////////////////////////////////////////////////// */
+  
+  .reg-fees-indian{
+    margin: 1rem 0;
+  width: 78%;
+  padding:1rem 1rem ; 
 }
-/* .paper1__box .paper__list ul{
-    list-style: none;
-    padding: 0 0.5rem 0.5rem 0.5rem;
-    cursor: pointer;
-} */
+
+.reg-fees-indian .reg-fees-content-head{
+  cursor: pointer;
+    color: #fe4a17;
+    font-weight: 600;
+}
+
+.reg-fees-indian .steps-list{
+  list-style-type: decimal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: first baseline;
+  gap: .8rem;
+  margin-top: .5rem;
+  padding: 1rem;
+}
+
+.steps-list li{
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;  
+}
+
+.bold-font{
+  font-weight: 600;
+
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////// */
 
 .sponsor-wrapper{
     display: flex;
-    /* flex: auto; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
