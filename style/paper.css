@@ -150,12 +150,14 @@ body{
   margin-left: 1rem;
   font-size: 24px;
   font-weight: 500;
-  
 }
+
 .sponsor-pay-head{
   text-align: center;
   text-decoration: underline;
+  font-size: 20px;
 }
+
 .table__table-dark {
     margin: 1rem;
     border-collapse: collapse;
