@@ -115,3 +115,24 @@ dropdownList.addEventListener("mousemove", (e) => {
 // }
 
 // showMenu('main-button','nav-menu')
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages = document.querySelectorAll("img[data-src]");
+
+  var imageObserver = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var image = entry.target;
+        image.src = image.dataset.src;
+        image.onload = function() {
+          image.removeAttribute("data-src");
+        };
+        observer.unobserve(image);
+      }
+    });
+  });
+
+  lazyloadImages.forEach(function(image) {
+    imageObserver.observe(image);
+  });
+});
