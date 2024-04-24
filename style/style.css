@@ -187,6 +187,10 @@ a {
 
 }
 
+.active {
+  color: #fe4a17;
+}
+
 /* Show icon */
 .show-icon .nav__toggle-menu {
   opacity: 0;

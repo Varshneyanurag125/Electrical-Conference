@@ -58,6 +58,7 @@ window.addEventListener('scroll', changeBg);
 
 // ================ Home image slider ================
 
+
 const btns = document.querySelectorAll('.nav-btn');
 const slides = document.querySelectorAll('.img-slide');
 
@@ -91,26 +92,45 @@ let sliderNav = function(manual){
 
    /* =============== show pdf btn ===============*/
 
-const toggleButton = document.getElementById("pdf-btn");
-const iframe = document.getElementById("pdf");
+// const toggleButton = document.getElementById("pdf-btn");
+// const iframe = document.getElementById("pdf");
 
-// Add event listener to the button
-toggleButton.addEventListener("click", function(event) {
-    // Toggle the display property of the iframe
-    event.stopPropagation();
-    if (iframe.style.display === "none") {
-        iframe.style.display = "flex";
-        toggleButton.textContent = "Close";
-    } else {
-        iframe.style.display = "none";
-        toggleButton.textContent = "Click Here";
+// // Add event listener to the button
+// toggleButton.addEventListener("click", function(event) {
+//     // Toggle the display property of the iframe
+//     event.stopPropagation();
+//     if (iframe.style.display === "none") {
+//         iframe.style.display = "flex";
+//         toggleButton.textContent = "Close";
+//     } else {
+//         iframe.style.display = "none";
+//         toggleButton.textContent = "Click Here";
+//     }
+// })
+
+// document.querySelectorAll('.nav__link').forEach(item => {
+//     console.log("testing")
+//     if(window.location.href.includes(item.href)){
+//         // set element state to hover
+// item.classList.add("active")    }
+//     else {
+//         item.classList.remove('active');
+//     }
+// })
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('nav ul li a');
+  
+    function changeLinkState() {
+      let index = sections.length;
+  
+      while (--index && window.scrollY + 250 < sections[index].offsetTop) {}
+  
+      navLinks.forEach((link) => link.classList.remove('active'));
+      navLinks[index].classList.add('active');
     }
-});
-
-document.body.addEventListener("click", function() {
-    if (iframe.style.display === "flex") {
-        iframe.style.display = "none";
-        toggleButton.textContent = "Click Here";
-    }
-});
-
+  
+    changeLinkState();
+    window.addEventListener('scroll', changeLinkState);
+  });
+  

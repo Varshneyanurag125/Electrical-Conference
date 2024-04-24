@@ -34,6 +34,7 @@
 }
 .profile-photo{
     width: 160px;
+    /* background-image: url('/profile_img.jpg'); */
     height: 160px;
     border-radius: 50%;
     position: relative;
