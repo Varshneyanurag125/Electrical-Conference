@@ -114,6 +114,7 @@ body{
     align-items: center;
     justify-content: center;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .sponsor-wrapper .sponsor-content{
@@ -174,10 +175,12 @@ body{
 .table-container{
   margin-top: 1rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 6rem;
   width: 100%;
+
 }
 
 .table__table-dark th,
