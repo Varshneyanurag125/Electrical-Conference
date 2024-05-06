@@ -65,7 +65,7 @@ body{
   
   .reg-fees-indian{
     margin: 1rem 0;
-  width: 78%;
+    width:fit-content;
   padding:1rem 1rem ; 
 }
 
@@ -73,8 +73,14 @@ body{
   cursor: pointer;
     color: #fe4a17;
     font-weight: 600;
+    padding-bottom: 1rem;
 }
 
+.reg-fees-indian .list-head{
+  font-size: 1.1rem;
+  font-weight: 700;
+
+}
 .reg-fees-indian .steps-list{
   list-style-type: decimal;
   display: flex;
@@ -82,7 +88,7 @@ body{
   justify-content: center;
   align-items: first baseline;
   gap: .8rem;
-  margin-top: .5rem;
+  /* margin-top: .5rem; */
   padding: 1rem;
 }
 
@@ -167,6 +173,11 @@ body{
 
 .table-container{
   margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  width: 100%;
 }
 
 .table__table-dark th,
