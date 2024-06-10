@@ -1,6 +1,4 @@
-// import Slick from './slick-1.8.1/slick/slick.js';
-// let myData = JSON.parse(data);
-// console.log(myData);
+
 const links = document.querySelectorAll(".page");
 
 for (const link of links) {
@@ -24,32 +22,31 @@ const sponsorWrapper = document.querySelector('.sponsor-wrapper');
 const sponsorImg = document.querySelector('.sponsor-img');
 
 let animationId;
-let position = -10; // Start position off-screen to the left
-const speed = 0.2; // Adjust the speed value to control the animation speed (higher is faster)
+let position = -10; 
+const speed = 0.2;
 const wrapperWidth = sponsorWrapper.offsetWidth;
 const imgWidth = sponsorImg.offsetWidth;
 
 function animate() {
-  position += speed; // Increment position based on speed
-  sponsorImg.style.left = `${position}%`; // Update left position of the image
+  position += speed;
+  sponsorImg.style.left = `${position}%`;
 
-  // Check if the image has moved off-screen to the right
+  
   if (position > 100) {
-    position = -10; // Reset position to off-screen on the left
+    position = -10;
   }
 
-  animationId = requestAnimationFrame(animate); // Request next animation frame
+  animationId = requestAnimationFrame(animate); 
 }
 
 function startAnimation() {
-  animationId = requestAnimationFrame(animate); // Start the animation loop
+  animationId = requestAnimationFrame(animate);
 }
 
 function stopAnimation() {
-  cancelAnimationFrame(animationId); // Stop the animation loop
+  cancelAnimationFrame(animationId);
 }
 
-// Start the animation when the page loads
 window.addEventListener('load', startAnimation);    
 
 
