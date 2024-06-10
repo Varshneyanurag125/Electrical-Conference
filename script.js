@@ -18,6 +18,40 @@ function clickHandler(e) {
   });
 }
 
+/*=============== sponsor wrapper ===============*/
+
+const sponsorWrapper = document.querySelector('.sponsor-wrapper');
+const sponsorImg = document.querySelector('.sponsor-img');
+
+let animationId;
+let position = -10; // Start position off-screen to the left
+const speed = 0.2; // Adjust the speed value to control the animation speed (higher is faster)
+const wrapperWidth = sponsorWrapper.offsetWidth;
+const imgWidth = sponsorImg.offsetWidth;
+
+function animate() {
+  position += speed; // Increment position based on speed
+  sponsorImg.style.left = `${position}%`; // Update left position of the image
+
+  // Check if the image has moved off-screen to the right
+  if (position > 100) {
+    position = -10; // Reset position to off-screen on the left
+  }
+
+  animationId = requestAnimationFrame(animate); // Request next animation frame
+}
+
+function startAnimation() {
+  animationId = requestAnimationFrame(animate); // Start the animation loop
+}
+
+function stopAnimation() {
+  cancelAnimationFrame(animationId); // Stop the animation loop
+}
+
+// Start the animation when the page loads
+window.addEventListener('load', startAnimation);    
+
 
 /*=============== SHOW MENU ===============*/
 const showMenu = (toggleId, navId) =>{
@@ -49,8 +83,10 @@ function changeBg() {
     let scrollValue = window.scrollY;
     if (scrollValue < 100) {
         navbar.classList.remove('bgcolor');
+        sponsorWrapper.style.backgroundColor = '#f8f8f8'; 
     } else {
         navbar.classList.add('bgcolor');
+        sponsorWrapper.style.backgroundColor = '#f8f8f8';
     }
 }
 

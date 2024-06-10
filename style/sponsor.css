@@ -1,0 +1,16 @@
+.sponsor-wrapper {
+    background: white;
+    width: 100vw;
+    height: 4.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.sponsor-img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    left: -10%; /* Start position off-screen to the left */
+}
