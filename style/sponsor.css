@@ -1,12 +1,16 @@
 .sponsor-wrapper {
     background: white;
     width: 100vw;
-    height: 5rem;
+    height: 2rem;
     overflow: hidden;
     position: relative;
 }
 
 .sponsor-img {
+    color: #4caf50;
+    /* color: blue; */
+    font-size: 1.2rem;
+    font-weight: 500;
     width: auto;
     height: 100%;
     object-fit: contain;
