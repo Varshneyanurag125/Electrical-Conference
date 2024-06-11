@@ -18,3 +18,25 @@
     position: absolute;
     left: -10%; /* Start position off-screen to the left */
 }
+
+.sponsor{
+    display: flex;
+    background: white;
+    width: 100vw;
+    height: 4rem;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sponsor-head{
+    font-size: 1.2rem;
+    color: black;
+}
+.sponsor-image{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+
+}
