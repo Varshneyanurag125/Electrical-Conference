@@ -8,7 +8,6 @@
 
 .sponsor-img {
     color: #4caf50;
-    /* color: blue; */
     font-size: 1.2rem;
     font-weight: 500;
     width: auto;
@@ -16,7 +15,7 @@
     object-fit: contain;
     object-position: center;
     position: absolute;
-    left: -10%; /* Start position off-screen to the left */
+    left: -10%;
 }
 
 .sponsor{
@@ -25,7 +24,7 @@
     width: 100vw;
     height: 4rem;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -33,10 +32,10 @@
     font-size: 1.2rem;
     color: black;
 }
+
 .sponsor-image{
     height: 100%;
     width: auto;
     object-fit: contain;
     object-position: center;
-
 }
