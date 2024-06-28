@@ -22,10 +22,11 @@
     display: flex;
     background: white;
     width: 100vw;
-    height: 4rem;
+    height: 4.8rem;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
+    padding: 2.5px;
     
 }
 
@@ -33,7 +34,7 @@
     display: flex;
     align-items: center;
     gap: 4rem;
-    width: 100%;
+    width: fit-content;
     height: 100%;
 }
 
@@ -48,4 +49,5 @@
     width: auto;
     object-fit: contain;
     object-position: center;
+
 }
