@@ -126,6 +126,7 @@ a {
   color: #fe4a17;
   font-family: "Allerta Stencil", sans-serif;
 }
+
 .nav__toggle {
   position: relative;
   width: 38px;
@@ -134,6 +135,7 @@ a {
   background-color: #fff;
   border-radius: 50%;
 }
+
 .nav__toggle-menu, .nav__toggle-close {
   font-size: 1.25rem;
   color: var(--title-color);
@@ -202,6 +204,7 @@ a {
   transform: rotate(90deg);
 }
   /* pdf */
+  
  .pdf{
   display: none;
   height: 100vh;
@@ -310,8 +313,7 @@ a {
   justify-content: center;
   flex-direction: column;
   flex: 1;
-  margin-top: 8rem;
-  /* margin-bottom: rem; */
+  margin-top: 9rem;
 }
 
 .heading-wrapper h2 {
