@@ -24,14 +24,24 @@
     width: 100vw;
     height: 4rem;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
+    
+}
+
+.sponsor-image-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    height: 100%;
 }
 
 .sponsor-head{
     font-size: 1.2rem;
     color: black;
 }
+
 
 .sponsor-image{
     height: 100%;
