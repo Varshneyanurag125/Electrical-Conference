@@ -22,7 +22,7 @@
     display: flex;
     background: white;
     width: 100vw;
-    height: 4.8rem;
+    height: 6.8rem;
     justify-content: center;
     gap: 2rem;
     align-items: center;
@@ -46,6 +46,13 @@
 
 .sponsor-image{
     height: 100%;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+
+}
+.sponsor-image1{
+    height: 60%;
     width: auto;
     object-fit: contain;
     object-position: center;
