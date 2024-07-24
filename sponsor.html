@@ -4,42 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Sponsors</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/paper.css">
-    <link rel="stylesheet" href="/style/date.css">
-    <link rel="stylesheet" href="/style/footer.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/style/contact.css">
-    <title>Important-Dates</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main_sponsor.css">
+    <link rel="stylesheet" href="style/footer.css">
     <style>
         .header {
            background-color: #101130 !important;
        }
    </style>
 </head>
-
 <body>
 
-    <!-- ==================Loader================== -->
-    <div id="pre-loader">
+     <!-- navbar -->
 
-    </div>
-    <!--=============== HEADER ===============-->
-    <header data-aos="fade-down" data-aos-duration="1000" class="header" id="nav">
+    <header class="header" id="nav">
         <nav class="nav container">
             <div class="nav__data">
                 <div class="navlogo">
                     <div class="nav-img">
                         <img src="images/logo.png" alt="NITH-LOGO">
                     </div>
-                    <span> राष्ट्रीय प्रौद्योगिकी संस्थान, हमीरपुर <br> National Institute of Technology <br> Hamirpur
-                        <br>
+                    <span> राष्ट्रीय प्रौद्योगिकी संस्थान, हमीरपुर <br>National Institute of Technology <br>Hamirpur <br>
                         <span class="logo-subtext">
-                            (An Institute of National Importance)
-                        </span>
+                        (An Institute of National Importance)
                     </span>
+                </span>
                     <!-- <span>Hamirpur</span> -->
                 </div>
 
@@ -61,11 +54,11 @@
                     <li class="dropdown__item">                      
                         <a href="/team.html"  class="nav__link">Organizing Committee</a>
                     </li>
-                    <li class="dropdown__item">
-                        <a href="/sponsor.html" class="nav__link">Sponsors</a>
+                    <li class="dropdown__item">                      
+                        <a href="/sponsor.html"  class="nav__link active">Sponsors</a>
                     </li>
                     <li class="dropdown__item">                      
-                        <a href="/date.html" class="nav__link active">Imp. Dates</a>
+                        <a href="/date.html" class="nav__link">Imp. Dates</a>
                     </li>
                     <li class="dropdown__item">
                         <a href="/track.html" class="nav__link">Conference Tracks</a>
@@ -74,7 +67,7 @@
                         <a href="/sponsorship.html" class="nav__link">Sponsorship</a>
                     </li>
                     <li>
-                        <a href="/submission.html" class="nav__link" >Paper Submission</a>
+                        <a href="/submission.html" class="nav__link">Paper Submission</a>
                     </li>
                     <li>
                         <a href="/paper.html" class="nav__link" >Registration</a>
@@ -90,42 +83,44 @@
         </nav>
     </header>
 
-    <!-- =============== SECTION 1 =============== -->
-    <!-- ////////////  PARTICIPANTS SECTION //////////// -->
-<div class="main-wrapper">
-    <div class="contactus-wrapper">   
-      <div class="contactus-main">
-        <div class="contactus-heading" id="impt-dates">
-          <h2>Important Dates</h2>
-        </div>
-        <div class="contactus-card">
-            <table class="table__table-dark sponsor-table" data-aos="zoom-in" data-aos-duration="1000">
-                <tbody>
-                    <tr>
-                        <td>Paper Submission deadline :</td>
-                        <td><span class="old-dates"> 20 July, 2024 </span> &nbsp; 26 July, 2024 </td>
-                    </tr>
-                    <tr>
-                        <td>Intimation of acceptance :</td>
-                        <td><span class="old-dates"> 23 July, 2024</span> &nbsp; 30 July, 2024 </td>
-                    </tr>
-                    <tr>
-                        <td>Submission of camera ready paper :</td>
-                        <td><span class="old-dates">26 July, 2024 </span> &nbsp; 5 Aug, 2024</td>
-                    </tr>
-                    <tr>
-                        <td class="last">Last date of registration : </td>
-                        <td class="last">10th Aug, 2024 </td>
-                    </tr>
-                </tbody>
-            </table>
+     <!------------------------ section - paper submission  ------------------------>
 
+    <div class="sponsor-wrapper">
+        <div class="sponsor-main">
+
+            <!-- heading -->
+            <div class="sponsor-heading">
+                <h1>OUR SPONSORS</h1>
+            </div>
+
+            <!-- card container -->
+            <div class="sponsor-container">
+
+                <!-- card-1  -->
+                <div class="sponsor-card">
+                    <img src="/images/sjvn_logo.jpg" alt="sponsor logo" class="sponsor1">
+                    <div class="sponsor-desc">
+                        <div class="sponsor-name">SJVN</div>
+                        <div class="sponsor-link">
+                            For more info: <span><a href="https://sjvn.nic.in/" target="_blank">Click Here</a></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- card-2 -->
+                <div class="sponsor-card">
+                    <img src="/images/sponsor image.jpg" alt="sponsor logo" class="sponsor2">
+                    <div class="sponsor-desc">
+                        <div class="sponsor-name">Syngient</div>
+                        <div class="sponsor-link">
+                            For more info: <span><a href="https://syngient.in/" target="_blank">Click Here</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </div> 
-</div>
-    
-    <!-- ////////////  footer  //////////// -->
+    </div>
 
     <footer class="footer">
         <div class=" footer-container">
@@ -180,18 +175,9 @@
             </div>
         </div>
     </footer>
+    
+    
 
-    <script src="data.js"></script>
-    <script src="venue.js"></script>
-    <script src="loader.js"></script>
-    <script src="script.js" type="module"></script>
-    <script src="clock.js" type="module"></script>
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>

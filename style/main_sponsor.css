@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: linear-gradient(#e9fdfb 0%, #c0fdee 45%);
+    line-height: 1.6;
+    font-size: 16px;
+    margin-top: 6.8rem;
+    overflow-x: hidden;
+}
+.sponsor-wrapper{
+    /* background-color: aqua; */
+    width: 100vw;
+    height: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+.sponsor-main{
+    width: 85%;
+    margin: 0 auto;
+}
+.sponsor-heading{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.sponsor-heading h1{
+    margin: 0 auto;
+    color: #656E81;
+    padding:1rem;
+    font-family: "Allerta Stencil";
+    letter-spacing: .2cap;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+}
+.sponsor-heading h1::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 110%;
+    height: 1px;
+    background-color: #101130;
+    margin-top:.5rem;
+    left: -1rem;
+
+}
+
+.sponsor-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.sponsor-card {
+    min-width: 300px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    margin: 20px 0;
+    padding: 20px 0;
+    transition: all 0.2s linear;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: relative;
+    overflow: hidden;
+}
+
+.sponsor-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        white 0deg,
+        transparent 200deg,
+        transparent 300deg,
+        rgba(255, 255, 255, 0.882) 360deg
+    );
+    animation: rotate 10s linear infinite;
+}
+
+.sponsor-card::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: inherit;
+    border-radius: 14px;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Rest of the styles remain the same */
+.sponsor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.sponsor-card .sponsor1,
+.sponsor-card .sponsor2,
+.sponsor-desc {
+    position: relative;
+    z-index: 1;
+}
+
+.sponsor-card .sponsor1 {
+    width: 10rem;
+    height: 12rem;
+    object-fit: contain;
+}
+
+.sponsor-card .sponsor2 {
+    width: 16rem;
+    height: 12rem;
+    object-fit: contain;
+}
+
+.sponsor-desc {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.sponsor-name {
+    font-family: "Allerta Stencil";
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sponsor-link {
+    font-size: 18px;
+}
