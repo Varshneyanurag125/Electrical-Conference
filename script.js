@@ -6,14 +6,20 @@ for (const link of links) {
 }
 
 function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
-
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
+  try {
+    
+    e.preventDefault();
+    const href = this.getAttribute("href");
+    const offsetTop = document.querySelector(href).offsetTop;
+    
+    scroll({
+      top: offsetTop,
+      behavior: "smooth"
+    });
+  } 
+  catch (error) {
+    console.log(error)  
+  }
 }
 
 /*=============== sponsor wrapper ===============*/
@@ -24,8 +30,8 @@ const sponsorImg = document.querySelector('.sponsor-img');
 let animationId;
 let position = -10; 
 const speed = 0.2;
-const wrapperWidth = sponsorWrapper.offsetWidth;
-const imgWidth = sponsorImg.offsetWidth;
+const wrapperWidth = sponsorWrapper?.offsetWidth;
+const imgWidth = sponsorImg?.offsetWidth;
 
 function animate() {
   position += speed;
@@ -46,8 +52,13 @@ function startAnimation() {
 function stopAnimation() {
   cancelAnimationFrame(animationId);
 }
-
-window.addEventListener('load', startAnimation);    
+try {
+  
+  window.addEventListener('load', startAnimation);    
+} 
+catch (error) {
+  console.log(error)
+}
 
 
 /*=============== SHOW MENU ===============*/
