@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+
+    background: linear-gradient(#e9fdfb 0%, #c0fdeee3 100%);
+}
+.main-speaker-head{
+    margin-top: 8rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Allerta Stencil";
+}
+.main-wrapper-speaker{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    margin: 0;
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* max-width:  */
+}
+.card-headtop{
+    padding-bottom: 1rem;
+    font-size: 16px;
+    color: gray;
+    text-decoration: underline;
+    font-style: "Allerta Stencil";
+}
+.card {
+    width: 20rem;
+    height: 380px;
+    background: white;
+    border: 1px solid #101130;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.card h2 {
+    margin: 0 0 10px;
+}
+.card p {
+    margin: 0;
+    text-align: center;
+}
+.card.left {
+    transform: translateX(-98%) scale(0.8);
+    z-index: 1;
+}
+.card.center {
+    transform: translateX(0) scale(1);
+    z-index: 3;
+}
+.card.right {
+    transform: translateX(98%) scale(0.8);
+    z-index: 1;
+}
