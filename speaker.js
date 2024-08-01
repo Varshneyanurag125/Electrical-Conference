@@ -9,4 +9,4 @@ function rotateCards() {
     });
 }
 
-setInterval(rotateCards, 3000);
+setInterval(rotateCards, 4000);
