@@ -1,23 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-body{
 
+body {
     background: linear-gradient(#e9fdfb 0%, #c0fdeee3 100%);
+    min-height: 100vh;
 }
-.main-speaker-head{
-    margin-top: 8rem;
+
+.main-speaker-head {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     align-items: center;
     display: flex;
     justify-content: center;
-    font-family: "Allerta Stencil";
+    font-family: "Allerta Stencil", sans-serif;
 }
-.main-wrapper-speaker{
-    font-family: Arial, sans-serif;
+
+.main-wrapper-speaker {
+    font-family: 'Open Sans', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,20 +30,24 @@ body{
     margin: 0;
     overflow: hidden;
 }
+
 .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* max-width:  */
+    height: 100%;
+    position: relative;
 }
-.card-headtop{
+
+.card-headtop {
     padding-bottom: 1rem;
     font-size: 16px;
     color: gray;
     text-decoration: underline;
-    font-style: "Allerta Stencil";
+    font-family: "Allerta Stencil", sans-serif;
 }
+
 .card {
     width: 20rem;
     height: 380px;
@@ -53,40 +61,116 @@ body{
     align-items: center;
     justify-content: center;
     position: absolute;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease, filter 0.5s ease;
 }
-.image-border{
+
+.image-border {
     width: 10em;
     height: 10em;
     border-radius: 50%;
     padding: 3px;
     border: 3px solid #101130;
     margin-bottom: 2em;
+    overflow: hidden;
 }
 
-.image-border img{
+.image-border img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .card h2 {
     margin: 0 0 10px;
 }
+
 .card p {
     margin: 0;
     text-align: center;
 }
+
 .card.left {
     transform: translateX(-98%) scale(0.8);
     z-index: 1;
+    filter: blur(3px);
 }
+
 .card.center {
     transform: translateX(0) scale(1);
     z-index: 3;
+    filter: blur(0);
 }
+
 .card.right {
     transform: translateX(98%) scale(0.8);
     z-index: 1;
+    filter: blur(3px);
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 240px;
+        height: 340px;
+    }
+    .image-border {
+        width: 8em;
+        height: 8em;
+    }
+}
+
+@media (min-width: 2560px) {
+    .card {
+        width: 28rem; 
+        height: 35rem;
+    }
+    .image-border {
+        width: 12em; 
+        height: 12em;
+    }
+    .card h2 {
+        font-size: 1.5em;
+    }
+    .card p {
+        font-size: 1.1em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main-speaker-head {
+        padding-top: 1rem;
+    }
+    .main-wrapper-speaker {
+        height: auto;
+        padding-top: 2rem;
+    }
+    .carousel {
+        flex-direction: column;
+        height: auto;
+        overflow-y: visible;
+        scroll-snap-type: y mandatory;
+        padding-bottom: 2rem;
+    }
+    .card {
+        position: relative;
+        width: 80%;
+        max-width: 300px;
+        height: 400px;
+        margin: 20px 0;
+        transform: none !important;
+        filter: blur(0) !important;
+        scroll-snap-align: center;
+        opacity: 0.7;
+        transition: all 0.5s ease;
+    }
+    .card.active {
+        opacity: 1;
+        transform: scale(1.05) !important;
+    }
+    .image-border {
+        width: 8em;
+        height: 8em;
+    }
+    
 }
