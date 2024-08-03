@@ -27,7 +27,7 @@ const carousel = document.querySelector('.carousel');
             }
         }
 
-        let interval = setInterval(rotateCards, 2000);
+        let interval = setInterval(rotateCards, 3500);
 
         window.addEventListener('resize', () => {
             if (window.innerWidth <= 768) {
@@ -35,15 +35,14 @@ const carousel = document.querySelector('.carousel');
                 cards.forEach(card => card.className = 'card');
             } else {
                 clearInterval(interval);
-                interval = setInterval(rotateCards, 2000);
-                rotateCards(); // Immediate update on resize
+                interval = setInterval(rotateCards, 3500);
+                rotateCards();
             }
-            handleScroll(); // Check active card on resize
+            handleScroll(); 
         });
 
         window.addEventListener('scroll', handleScroll);
 
-        // Initial setup
         if (window.innerWidth > 768) {
             rotateCards();
         } else {
