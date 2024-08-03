@@ -29,7 +29,7 @@ const sponsorImg = document.querySelector('.sponsor-img');
 
 let animationId;
 let position = -10; 
-const speed = 0.2;
+const speed = 0.1;
 const wrapperWidth = sponsorWrapper?.offsetWidth;
 const imgWidth = sponsorImg?.offsetWidth;
 
@@ -134,33 +134,6 @@ let sliderNav = function(manual){
     }
   }, 5000);
 
-   /* =============== show pdf btn ===============*/
-
-// const toggleButton = document.getElementById("pdf-btn");
-// const iframe = document.getElementById("pdf");
-
-// // Add event listener to the button
-// toggleButton.addEventListener("click", function(event) {
-//     // Toggle the display property of the iframe
-//     event.stopPropagation();
-//     if (iframe.style.display === "none") {
-//         iframe.style.display = "flex";
-//         toggleButton.textContent = "Close";
-//     } else {
-//         iframe.style.display = "none";
-//         toggleButton.textContent = "Click Here";
-//     }
-// })
-
-// document.querySelectorAll('.nav__link').forEach(item => {
-//     console.log("testing")
-//     if(window.location.href.includes(item.href)){
-//         // set element state to hover
-// item.classList.add("active")    }
-//     else {
-//         item.classList.remove('active');
-//     }
-// })
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.section');
     const navLinks = document.querySelectorAll('nav ul li a');
