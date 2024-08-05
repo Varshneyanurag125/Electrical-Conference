@@ -23,43 +23,27 @@ function clickHandler(e) {
 }
 
 /*=============== sponsor wrapper ===============*/
-
 const sponsorWrapper = document.querySelector('.sponsor-wrapper');
 const sponsorImg = document.querySelector('.sponsor-img');
 
-let animationId;
-let position = -160; 
-const speed = 0.1;
-const wrapperWidth = sponsorWrapper?.offsetWidth;
-const imgWidth = sponsorImg?.offsetWidth;
-
-function animate() {
-  position += speed;
-  sponsorImg.style.left = `${position}%`;
-
-  
-  if (position > 100) {
-    position = -160;
-  }
-
-  animationId = requestAnimationFrame(animate); 
-}
-
 function startAnimation() {
-  animationId = requestAnimationFrame(animate);
+    // Calculate the total width of the content
+    const contentWidth = Array.from(sponsorImg.children)
+        .reduce((total, span) => total + span.offsetWidth, 0);
+
+    // Set the animation duration based on content width
+    const duration = contentWidth / 50; // Adjust speed as needed
+    sponsorImg.style.animationDuration = `${duration}s`;
 }
 
-function stopAnimation() {
-  cancelAnimationFrame(animationId);
-}
-try {
-  
-  window.addEventListener('load', startAnimation);    
-} 
-catch (error) {
-  console.log(error)
-}
+// Start the animation when the window loads
+window.addEventListener('load', startAnimation);
 
+// Restart the animation when it ends
+sponsorImg.addEventListener('animationiteration', () => {
+    // Recalculate in case content changed
+    startAnimation();
+});
 
 /*=============== SHOW MENU ===============*/
 const showMenu = (toggleId, navId) =>{

@@ -10,13 +10,32 @@
     color: #4caf50;
     font-size: 1.2rem;
     font-weight: 500;
-    width: auto;
     height: 100%;
-    object-fit: contain;
-    object-position: center;
     position: absolute;
-    left: -10%;
+    right: 0; /* Start from the right edge */
     display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    animation: moveLeft 30s linear infinite; /* Adjust time as needed */
+}
+
+.sponsor-img span {
+    display: inline-block;
+    padding-right: 50px; /* Space between spans */
+}
+
+.reg-form-note {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .sponsor{
