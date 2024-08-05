@@ -28,7 +28,7 @@ const sponsorWrapper = document.querySelector('.sponsor-wrapper');
 const sponsorImg = document.querySelector('.sponsor-img');
 
 let animationId;
-let position = -10; 
+let position = -160; 
 const speed = 0.1;
 const wrapperWidth = sponsorWrapper?.offsetWidth;
 const imgWidth = sponsorImg?.offsetWidth;
@@ -39,7 +39,7 @@ function animate() {
 
   
   if (position > 100) {
-    position = -10;
+    position = -160;
   }
 
   animationId = requestAnimationFrame(animate); 

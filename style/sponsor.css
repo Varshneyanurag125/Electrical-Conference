@@ -16,6 +16,7 @@
     object-position: center;
     position: absolute;
     left: -10%;
+    display: flex;
 }
 
 .sponsor{
