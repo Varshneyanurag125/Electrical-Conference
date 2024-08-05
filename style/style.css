@@ -86,7 +86,7 @@ a {
 
 /*=============== NAV ===============*/
 .nav {
-  height: var(--header-height);
+  /* height: var(--header-height); */
   position: relative;
 }
 .nav__data {
