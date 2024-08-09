@@ -1,5 +1,5 @@
 const sponsors = [
-    { src: '/images/sponsor 1.jpg', alt: 'Sponsor 1' },
+    { src: '/images/sjvn_logo.jpg', alt: 'Sponsor 1' },
     { src: '/images/sponsor image.jpg', alt: 'Sponsor 2' },
     { src: '/images/sponsor3.jpg', alt: 'Sponsor 3' },
     { src: '/images/sponsor 4.jpg', alt: 'Sponsor 4' },
