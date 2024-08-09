@@ -37,8 +37,7 @@
         transform: translateX(-100%);
     }
 }
-
-.sponsor{
+/* .sponsor {
     display: flex;
     background: white;
     width: 100vw;
@@ -47,10 +46,9 @@
     gap: 2rem;
     align-items: center;
     padding: 2.5px;
-    
 }
 
-.sponsor-image-wrapper{
+.sponsor-image-wrapper {
     display: flex;
     align-items: center;
     gap: 4rem;
@@ -58,23 +56,80 @@
     height: 100%;
 }
 
-.sponsor-head{
+.sponsor-head {
     font-size: 1.2rem;
     color: black;
 }
 
-
-.sponsor-image{
+.sponsor-image {
     height: 100%;
     width: auto;
     object-fit: contain;
     object-position: center;
-
 }
-.sponsor-image1{
+
+.sponsor-image1 {
     height: 60%;
     width: auto;
     object-fit: contain;
     object-position: center;
+} */
+  .sponsor-container {
+            display: flex;
+            align-items: center;
+            background: white;
+            width: 100%;
+            height: 6.8rem;
+            overflow: hidden;
+            border: 1px solid rgba(128, 128, 128, 0.158);
+        }
 
-}
+        .sponsor-head {
+            flex-shrink: 0;
+            width: 200px;
+            padding: 0 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: black;
+            text-align: center;
+        }
+
+        .sponsor-strip {
+            flex-grow: 1;
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+        }
+
+        .sponsor-images {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .sponsor-image {
+            height: 60px;
+            width: auto;
+            margin: 0 2rem;
+            object-fit: contain;
+        }
+
+        @media (max-width: 768px) {
+            .sponsor-container {
+                height: 5rem;
+            }
+
+            .sponsor-head {
+                width: 120px;
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+
+            .sponsor-image {
+                height: 40px;
+                margin: 0 1rem;
+            }
+        }
