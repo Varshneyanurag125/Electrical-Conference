@@ -133,3 +133,97 @@
                 margin: 0 1rem;
             }
         }
+
+
+        #ad-container {
+         border: 1px solid rgb(0, 0, 0);
+         margin: auto;
+         display: flex;
+         width: 60rem;
+         justify-content:center;
+         gap: 4rem;   
+         align-items: center;
+         position: relative;
+         background: white;
+    
+        }
+
+        .ad-head{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .ad-head h3 {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .common{
+            width: 50%;
+            height: 5rem;
+        } 
+
+        .ad-image{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+
+        #close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+        }
+        #partner-image {
+            width: 90%;
+            height: 80%;
+            padding-right: 5rem ;
+            object-fit:fill;
+            object-position: center;
+
+        }
+
+           /* Media Queries */
+           @media screen and (max-width: 1024px) {
+            #ad-container {
+                width: 90%;
+                gap: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #ad-container {
+                flex-direction: column;
+                gap: 1rem;
+                height: auto;
+            }
+
+            .common {
+                width: 100%;
+                height: auto;
+            }
+
+            .ad-head, .ad-image {
+                justify-content: center;
+            }
+
+            #partner-image {
+                padding-right: 0;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #ad-container {
+                padding: 0.5rem;
+            }
+
+            .ad-head h3 {
+                font-size: 0.9rem;
+                padding: 0.5rem;
+            }
+        }

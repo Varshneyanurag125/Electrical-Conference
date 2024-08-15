@@ -48,3 +48,24 @@ const carousel = document.querySelector('.carousel');
         } else {
             handleScroll();
         }
+
+
+        const adContainer = document.getElementById('ad-container');
+        const closeBtn = document.getElementById('close-btn');
+        const showTime =   2*60 * 1000; // 5 minutes in milliseconds
+        const hideTime =  2*60 * 1000; // 5 minutes in milliseconds
+
+        function showAd() {
+            adContainer.style.display = 'flex';
+            setTimeout(hideAd, showTime);
+        }
+
+        function hideAd() {
+            adContainer.style.display = 'none';
+            setTimeout(showAd, hideTime);
+        }
+
+        closeBtn.addEventListener('click', hideAd);
+
+        // Initial show
+        showAd();
