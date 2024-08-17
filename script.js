@@ -32,7 +32,7 @@ function startAnimation() {
         .reduce((total, span) => total + span.offsetWidth, 0);
 
     // Set the animation duration based on content width
-    const duration = contentWidth / 50; // Adjust speed as needed
+    const duration = contentWidth / 28; // Adjust speed as needed
     sponsorImg.style.animationDuration = `${duration}s`;
 }
 
