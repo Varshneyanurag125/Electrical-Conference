@@ -4,7 +4,8 @@ const sponsors = [
     { src: '/images/sponsor3.jpg', alt: 'Sponsor 3' },
     { src: '/images/sponsor 4.jpg', alt: 'Sponsor 4' },
     { src: '/images/sponsor 5.jpg', alt: 'Sponsor 5' },
-    { src: '/images/sponsor 6.jpg', alt: 'Sponsor 6' }
+    { src: '/images/sponsor 6.jpg', alt: 'Sponsor 6' },
+    { src: '/images/sponsor 7.jpg', alt: 'Sponsor 6' }
 
 ];
 
